@@ -1,0 +1,53 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-HotelSystem</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        form{
+    width: 100%;
+    max-width: 400px;
+    margin:0 auto;
+}
+    .campo-entrada{
+        width: 100%;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    button, input[type="submit"] {
+        background-color: #0056b3;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>HotelSystem</h1>
+    <h2>Acesso do cliente</h2>
+
+    <form action="autenticar.php" method="post">
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="senha">senha</label><br>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+         
+        <button>ENTRAR</button>
+
+    </form >
+
+    <p>
+        Ainda nao tem cadastro?
+        <a href="cadastro_cliente.html">Cadrastre-se aqui</a>
+    </p>
+</form>
+    
+</body>
+</html>
