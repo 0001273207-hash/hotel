@@ -1,28 +1,20 @@
 <?php
-session_start();
-include("conexao.php");
+include "conexao.php";
 
-$emai=$_POST['email'];
-$senha_digitada=$_POST['senha'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
-$sql = "SELECT * FROM  clientes WHERE senha = '$senha' AND email ='$email'";
+$sql = "SELECT * FROM clientes WHERE email = '$email' and senha = '$senha'";
 
-$resultado = mysqli_query(
-    $conexao,
-    $sql
-);
-$cliente = mysqli_fetch_assoc($resultado)
+$resultado = mysqli_query($conexao, $sql);
 
-if($cliente){
-    echo"login realizado com sucesso";
+if(mysqli_num_rows($resultado) > 0){
+   header("Location:minhas_reservas.php");
+   exit();
 }else{
-echo"Email ou senha invalidos"
+   header("Location:login.html");
+exit();
 }
-
 ?>
 
-
-
-
-
-
+    

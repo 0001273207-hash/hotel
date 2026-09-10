@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+
+<body style="text-align: center; font-family: Arial, sans-serif; background: linear-gradient(135deg, #1e1b4b, #312e81, #1e40af);">
+    <h1>VagaViva</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="salvar_hotel,php">
+        
+
+        <h2 style="color: #0091ff; margin: 10px 0; text-align: center;">
+            <label for="texto">DIGITE O NOME DO HOTEL:</label><br>
+            <input type="text" name="texto" id="texto" placeholder="Nome do hotel" required style="padding: 5px; width: 200px;">
+        </h2>
+        <br>
+  
+        <h2 style="color: #15c8ff; margin: 10px 0; text-align: center;">
+            <label for="cidade">CIDADE:</label><br>
+            <input type="text" name="cidade" id="cidade" placeholder="Sua cidade" required style="padding: 5px; width: 200px;">
+        </h2>
+        <br>
+        <br>
+        <br>
+        
+
+        <select name="avaliacao" id="avaliacao" style="text-align: center; padding: 8px; font-size: 16px;">
+            <option value="">Classificação em estrelas</option>
+            <option value="1">⭐ ( Ruim )</option>
+            <option value="2">⭐⭐ ( Regular )</option>
+            <option value="3">⭐⭐⭐ ( Bom )</option>
+            <option value="4">⭐⭐⭐⭐ ( Muito Bom )</option>
+            <option value="5">⭐⭐⭐⭐⭐ ( Excelente )</option>
+        </select>
+        <br><br>
+        <button>salvar_hotel</button>
+        
+    </form>
+</body>
+
+</html>
