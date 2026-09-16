@@ -1,10 +1,10 @@
 <?php
-require_once 'conexao.php';
+include 'conexao.php';
 
-$nome=$_POST['nome'];
-$email=$_POST['email'];
-$telefone=$_POST['telefone'];
-$senha=$_POST['senha'];
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$senha = $_POST['senha'];
 
 $sql="INSERT INTO clientes (nome, email, telefone, senha) VALUES ('$nome', '$email', '$telefone', '$senha')";
 

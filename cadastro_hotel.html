@@ -15,25 +15,32 @@
     <br>
     <br>
     <br>
-    <form action="salvar_hotel,php">
+    <form action="salvar_hotel.php" method="post">
         
 
         <h2 style="color: #080606; margin: 10px 0; text-align: center;">
             <label for="texto">DIGITE O NOME DO HOTEL:</label><br>
-            <input type="text" name="texto" id="texto" placeholder="Nome do hotel" required style="padding: 5px; width: 200px;">
+            <input type="text" name="nome" id="nome" placeholder="Nome do hotel" required style="padding: 5px; width: 200px;">
         </h2>
         <br>
   
         <h2 style="color: #030303; margin: 10px 0; text-align: center;">
             <label for="cidade">CIDADE:</label><br>
             <input type="text" name="cidade" id="cidade" placeholder="Sua cidade" required style="padding: 5px; width: 200px;">
+
+            <br>
+             <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email" placeholder="Seu email" required style="padding: 5px; width: 200px;">
+            <br>
+             <label for="senha">SENHA:</label><br>
+            <input type="password" name="senha" id="senha" placeholder="Sua Senha" required style="padding: 5px; width: 200px;">
         </h2>
         <br>
         <br>
         <br>
         
 
-        <select name="avaliacao" id="avaliacao" style="text-align: center; padding: 8px; font-size: 16px;">
+        <select name="estrelas" id="estrelas" style="text-align: center; padding: 8px; font-size: 16px;">
             <option value="">Classificação em estrelas</option>
             <option value="1">⭐ ( Ruim )</option>
             <option value="2">⭐⭐ ( Regular )</option>
