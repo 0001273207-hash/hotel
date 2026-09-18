@@ -4,19 +4,20 @@ include 'conexao.php';
 $nome = $_POST['nome'];
 $cidade = $_POST['cidade'];
 $estrelas = $_POST['estrelas'];
-$email = $_POST['email'];
 $senha = $_POST['senha'];
+$email = $_POST['email'];
 
 
 
-$sql = "INSERT INTO hoteis (nome, cidade, estrelas,email,senha)
-VALUES('$nome','$cidade','$estrelas','$email','$senha')";
+$sql = "INSERT INTO hoteis (nome, cidade, estrelas, senha, email)
+VALUES('$nome','$cidade','$estrelas','$senha','$email')";
 
 $resultado = mysqli_query($conexao, $sql);
 
-if (!$resultado) {
-    echo "erro ao cadastrar" . mysqli_error($conexao);
-    exit;
+if (mysqli_query($conexao, $sql)) {
+
+}else {
+
 }
 ?>
 
@@ -38,7 +39,7 @@ if (!$resultado) {
     padding-top: 100px;
 ">
 
-    <h1 style="color: white;">VagaViva</h1>
+    <h1 style="color: white;">Vagas Disponivel</h1>
 
     <br><br>
 
