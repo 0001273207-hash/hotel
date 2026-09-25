@@ -1,18 +1,14 @@
 <?php
-
 require_once 'conexao.php';
-
 $sql = "SELECT * FROM hoteis";
 $resultado = mysqli_query($conexao, $sql);
-
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LISTA DE HOTÉIS</title>
 </head>
 <body>
     <table>
@@ -29,7 +25,7 @@ $resultado = mysqli_query($conexao, $sql);
                     <td>".$linha['nome']."</td>
                     <td>".$linha['cidade']."</td>
                     <td>".$linha['estrelas']."</td>
-                    <td><a href='ver_quartos.php?id_hotel=".$linha['id']."'>VER QUARTOS</a></td>
+                    <td> <a href='ver_quarto.php?id_hotel=".$linha['id']."'>VER QUARTOS</a></td>
                 </tr>
             ";
         }
