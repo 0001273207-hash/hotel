@@ -7,10 +7,13 @@ $estrelas = $_POST['estrelas'];
 $senha = $_POST['senha'];
 $email = $_POST['email'];
 
+$senha_hash =password_hash($senha, PASSWORD_DEFAULT);
+
+
 
 
 $sql = "INSERT INTO hoteis (nome, cidade, estrelas, senha, email)
-VALUES('$nome','$cidade','$estrelas','$senha','$email')";
+VALUES('$nome','$cidade','$estrelas','$senha_hash','$email')";
 
 $resultado = mysqli_query($conexao, $sql);
 
