@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['logado'])|| $_SESSION['logado'] !== true){
+    
+}
 require_once "conexao.php";
 $sql = "SELECT 
     reservas.id AS id_reservas,
